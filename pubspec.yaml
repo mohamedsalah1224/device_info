@@ -1,0 +1,24 @@
+name: device_info
+description: Module to get device info.
+version: 1.0.0
+homepage: https://github.com/mnayef95/intelligence_questions_flutter
+publish_to: none
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.snapics.minding.deviceinfo
+        pluginClass: DeviceInfoPlugin
+      ios:
+        pluginClass: DeviceInfoPlugin
